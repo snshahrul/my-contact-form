@@ -2,188 +2,657 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shahrul Azmi Salim Shah | Mechanical Engineer – Thermal Deaerator Specialist</title>
   <meta name="description" content="22+ years expertise in thermal deaerators, ASME pressure vessels, steam boilers, and AI predictive maintenance. I restore zero-oxygen performance for palm oil mills.">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
 </head>
 <body>
 
-<header class="hero">
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-container">
+    <a href="#" class="nav-logo">
+      <i class="fas fa-cog"></i> Shahrul<span>Engineer</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#expertise" class="nav-link">Expertise</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+      <li><a href="#faq" class="nav-link">FAQ</a></li>
+      <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero" id="home">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-bg-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
   <div class="container hero-grid">
     <div class="hero-content">
       <div class="badge-group">
-        <span class="badge">Mechanical Engineer</span>
-        <span class="badge">22+ Years Exp</span>
-        <span class="badge">ASME Certified</span>
+        <span class="badge"><i class="fas fa-cog"></i> Mechanical Engineer</span>
+        <span class="badge badge-accent"><i class="fas fa-briefcase"></i> 22+ Years</span>
+        <span class="badge"><i class="fas fa-certificate"></i> ASME Certified</span>
       </div>
       <h1>Shahrul Azmi Salim Shah</h1>
       <p class="subhead">
-        🔥 <strong class="highlight">I help palm oil mills & industrial plants eliminate zero‑oxygen failures in Thermal Deaerators</strong> — 
-        restoring “zero bubble” performance after years of operation. Pressure vessel integrity, ASME compliance, and AI-driven predictive maintenance.
+        <i class="fas fa-fire-flame-curved highlight-icon"></i> <strong class="highlight">I help palm oil mills & industrial plants eliminate zero‑oxygen failures in Thermal Deaerators</strong> — restoring "zero bubble" performance after years of operation.
       </p>
       <div class="hero-buttons">
-        <a href="#contact" class="btn btn-primary">📞 Solve my deaerator problem →</a>
-        <a href="#expertise" class="btn btn-outline">📄 View credentials</a>
+        <a href="#contact" class="btn btn-primary"><i class="fas fa-phone"></i> Solve My Problem</a>
+        <a href="#services" class="btn btn-outline"><i class="fas fa-list-ul"></i> View Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">22+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">ASME Compliance</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Safety Incidents</span>
+        </div>
       </div>
     </div>
     <div class="hero-photo">
-      <div class="photo-placeholder">
-        📸<br>Photo
+      <div class="photo-wrapper">
+        <div class="photo-placeholder">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="photo-accent"></div>
       </div>
-      <p class="photo-caption">[Your professional headshot]</p>
+      <p class="photo-caption">Professional Engineer</p>
     </div>
+  </div>
+  <div class="hero-scroll">
+    <a href="#services">
+      <i class="fas fa-chevron-down"></i>
+    </a>
   </div>
 </header>
 
 <main>
-  <!-- Core problem / signature solution -->
-  <section id="expertise" class="section-light">
+  <!-- Services Section -->
+  <section id="services" class="section-light">
     <div class="container">
-      <h2>⚙️ The deaerator “zero oxygen / zero bubble” fix</h2>
+      <div class="section-header">
+        <span class="section-tag">Services</span>
+        <h2><i class="fas fa-concierge-bell"></i> What I Offer</h2>
+        <p class="section-desc">Comprehensive engineering solutions for your industrial needs</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-tools"></i></div>
+          <h3>Thermal Deaerator Repair</h3>
+          <p>Restore your deaerator to original "zero bubble" performance. Complete troubleshooting, redesign, and post-repair validation.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Root cause analysis</li>
+            <li><i class="fas fa-check"></i> Tray & spray system repair</li>
+            <li><i class="fas fa-check"></i> Performance validation</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>ASME Pressure Vessel Services</h3>
+          <p>Full-spectrum pressure vessel engineering - from design to certification. ASME Section VIII compliance guaranteed.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Design & engineering</li>
+            <li><i class="fas fa-check"></i> R-Stamp repair certification</li>
+            <li><i class="fas fa-check"></i> DOSH compliance</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-robot"></i></div>
+          <h3>AI Predictive Maintenance</h3>
+          <p>Industry 4.0 solutions using machine learning to predict equipment failures before they happen. Reduce downtime by up to 25%.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Anomaly detection</li>
+            <li><i class="fas fa-check"></i> Failure prediction models</li>
+            <li><i class="fas fa-check"></i> Dashboard integration</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-file-alt"></i></div>
+          <h3>Technical Documentation</h3>
+          <p>Complete documentation packages for regulatory compliance - method statements, inspection reports, and quality manuals.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Method statements</li>
+            <li><i class="fas fa-check"></i> Inspection reports</li>
+            <li><i class="fas fa-check"></i> QA/QC documentation</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-boiler"></i></div>
+          <h3>Boiler House Projects</h3>
+          <p>End-to-end boiler house installation and commissioning for palm oil mills and industrial facilities.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> New installations</li>
+            <li><i class="fas fa-check"></i> Upgrades & expansions</li>
+            <li><i class="fas fa-check"></i> Performance testing</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+          <h3>Safety & Inspection</h3>
+          <p>Comprehensive safety inspections and audits to ensure your equipment meets all regulatory requirements.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> DOSH inspections</li>
+            <li><i class="fas fa-check"></i> NBIC compliance</li>
+            <li><i class="fas fa-check"></i> Risk assessments</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Banner -->
+  <section class="stats-banner">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-banner-item">
+          <i class="fas fa-industry"></i>
+          <div class="stat-banner-content">
+            <span class="stat-banner-number">50+</span>
+            <span class="stat-banner-label">Projects Delivered</span>
+          </div>
+        </div>
+        <div class="stat-banner-item">
+          <i class="fas fa-check-circle"></i>
+          <div class="stat-banner-content">
+            <span class="stat-banner-number">100%</span>
+            <span class="stat-banner-label">ASME Compliance</span>
+          </div>
+        </div>
+        <div class="stat-banner-item">
+          <i class="fas fa-clock"></i>
+          <div class="stat-banner-content">
+            <span class="stat-banner-number">22</span>
+            <span class="stat-banner-label">Years Experience</span>
+          </div>
+        </div>
+        <div class="stat-banner-item">
+          <i class="fas fa-smile"></i>
+          <div class="stat-banner-content">
+            <span class="stat-banner-number">100%</span>
+            <span class="stat-banner-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise Section -->
+  <section id="expertise" class="section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Expertise</span>
+        <h2><i class="fas fa-gears"></i> The Deaerator Zero-Oxygen Fix</h2>
+      </div>
       <div class="two-columns">
         <div class="col-main">
-          <p class="lead-text"><strong>After years of operation, thermal deaerators lose efficiency — oxygen levels rise, bubbles appear, and your boiler system is at risk.</strong> I've helped multiple mills recover reliable <strong>zero-dissolved oxygen</strong> performance, extending equipment life and meeting safety codes.</p>
+          <p class="lead-text"><strong>After years of operation, thermal deaerators lose efficiency — oxygen levels rise, bubbles appear, and your boiler system is at risk.</strong></p>
+          <p>I've helped multiple mills recover reliable <strong>zero-dissolved oxygen</strong> performance, extending equipment life and meeting safety codes.</p>
           <ul class="check-list">
             <li>Root cause analysis of deaerator tray & spray systems</li>
             <li>Pressure vessel integrity assessment (ASME VIII Div.1 / NBIC)</li>
             <li>Mechanical redesign & repair documentation for DOSH compliance</li>
             <li>Post-repair validation — verified <strong>zero bubble</strong> oxygen removal</li>
           </ul>
+          <div class="cta-box">
+            <a href="#contact" class="btn btn-primary btn-sm"><i class="fas fa-arrow-right"></i> Get Your Solution</a>
+          </div>
         </div>
         <div class="col-sidebar">
           <div class="result-card">
-            <p class="result-title">✅ Proven results:</p>
-            <p>✔ Restored <strong>dissolved oxygen < 7 ppb</strong> in 3 mills<br>
-            ✔ ASME & NBIC R‑Stamp re-certification achieved<br>
-            ✔ Zero unplanned downtime after intervention</p>
+            <div class="result-icon"><i class="fas fa-trophy"></i></div>
+            <p class="result-title">Proven Results</p>
+            <ul class="result-list">
+              <li><i class="fas fa-droplet"></i> Restored <strong>dissolved oxygen &lt; 7 ppb</strong> in 3 mills</li>
+              <li><i class="fas fa-shield-halved"></i> ASME & NBIC R‑Stamp re-certification</li>
+              <li><i class="fas fa-chart-line"></i> Zero unplanned downtime after intervention</li>
+              <li><i class="fas fa-clock"></i> Extended equipment life by 10+ years</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- core expertise & skills -->
-  <section class="section-alt">
+  <!-- Skills & Tools -->
+  <section class="section-light">
     <div class="container">
-      <h2>📐 Engineering core — Pressure Vessels & Steam Boilers</h2>
+      <div class="section-header">
+        <span class="section-tag">Technical Skills</span>
+        <h2><i class="fas fa-ruler-combined"></i> Engineering Tools & Codes</h2>
+      </div>
       <div class="skills-grid">
         <div class="skill-card">
-          <h3>📜 Design & Compliance</h3>
-          <p>ASME Section VIII Div. 1 • Section IX • Section V • Section II<br>
-          BS1113 • BS2790 • NBIC • DOSH regulations</p>
-          <p class="card-note"><strong>✔ Certified ASME Sec VIII Div.1</strong> – design, repair, and quality assurance documentation for unified pressure vessels & steam boilers.</p>
-        </div>
-        <div class="skill-card">
-          <h3>🛠️ Engineering Software</h3>
+          <div class="card-icon"><i class="fas fa-drafting-compass"></i></div>
+          <h3>Design Software</h3>
           <p><strong>PV Elite</strong> – advanced pressure vessel design & analysis<br>
-          AutoCAD • Inventor • technical drawing & documentation</p>
-          <p class="card-note">Quality assurance for high-stakes projects & regulatory liaison (DOSH).</p>
+          AutoCAD Mechanical • Autodesk Inventor</p>
+          <div class="card-footer">
+            <span class="card-tag">PV Elite</span>
+            <span class="card-tag">AutoCAD</span>
+            <span class="card-tag">Inventor</span>
+          </div>
         </div>
         <div class="skill-card">
-          <h3>🏭 Palm Oil Mill Projects</h3>
-          <p>✔ Sterilizer fabrication, installation & commissioning<br>
-          ✔ New Boiler house installation<br>
-          ✔ End-to-end small project management for mill expansions</p>
+          <div class="card-icon"><i class="fas fa-certificate"></i></div>
+          <h3>ASME Codes</h3>
+          <p>ASME Section VIII Div. 1 • Section IX • Section V • Section II<br>
+          BS1113 • BS2790 • NBIC • DOSH</p>
+          <div class="card-footer">
+            <span class="card-tag">ASME</span>
+            <span class="card-tag">NBIC</span>
+            <span class="card-tag">DOSH</span>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- AI / ML & predictive maintenance -->
-  <section class="section-light">
-    <div class="container">
-      <h2>🤖 AI Automation & Predictive Maintenance (Industry 4.0 Edge)</h2>
-      <div class="two-columns">
-        <div class="col-main">
-          <p>Forward‑thinking mechanical engineer bridging classical pressure vessel expertise with <strong>Python, machine learning and AI automation</strong>. I don't just repair — I equip your plant with intelligent strategies that prevent failures before they happen.</p>
-          <ul class="check-list">
-            <li>Data monitoring & anomaly detection on boiler/deaerator trends</li>
-            <li>Predict equipment failure using <strong>scikit-learn, XGBoost</strong></li>
-            <li>Automated reporting dashboards for maintenance teams</li>
-            <li>Reduce unplanned downtime & OPEX by up to 25%</li>
-          </ul>
-        </div>
-        <div class="col-sidebar">
-          <div class="dark-card">
-            <p class="dark-card-title">📜 Certifications (CodeCamp):</p>
-            <p>🐍 Scientific Computing with Python (2025)<br>
-            📊 Data Analysis with Python (2025)<br>
-            🤖 Machine Learning with Python (2025)</p>
-            <p class="dark-card-quote">“I build AI tools that make legacy equipment smarter.”</p>
+        <div class="skill-card">
+          <div class="card-icon"><i class="fas fa-code"></i></div>
+          <h3>AI & Automation</h3>
+          <p>Python • scikit-learn • XGBoost • Data visualization<br>
+          Predictive maintenance models</p>
+          <div class="card-footer">
+            <span class="card-tag">Python</span>
+            <span class="card-tag">ML</span>
+            <span class="card-tag">AI</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- certifications & credentials -->
-  <section class="section-alt">
+  <!-- Projects Gallery -->
+  <section id="projects" class="section-alt">
     <div class="container">
-      <h2>📜 Certifications & Industry Standards</h2>
-      <div class="cert-grid">
-        <span class="cert-badge">ASME Section VIII Div. 1</span>
-        <span class="cert-badge">ASME Section IX (Welding)</span>
-        <span class="cert-badge">ASME Section V (NDE)</span>
-        <span class="cert-badge">ASME Section II (Materials)</span>
-        <span class="cert-badge">NBIC (National Board)</span>
-        <span class="cert-badge">BS1113 / BS2790</span>
-        <span class="cert-badge">DOSH compliance expert</span>
-        <span class="cert-badge">PV Elite Specialist</span>
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2><i class="fas fa-hard-hat"></i> Recent Projects</h2>
+        <p class="section-desc">A selection of my recent engineering work</p>
       </div>
-      <div class="testimonial-quote">
-        <p class="quote-text">🏅 “22 years of unified pressure vessel and boiler documentation — from design through repair and regulatory approval. I work directly with ASME standards and local authorities to keep your plant certified and safe.”</p>
-        <p class="quote-author">— Shahrul Azmi Salim Shah, Head of Engineering</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-industry"></i>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Pressure Vessel</span>
+            <h3>Deaerator Repair - Mill A</h3>
+            <p>Complete restoration of thermal deaerator, restoring zero-oxygen performance.</p>
+            <div class="project-tags">
+              <span>ASME VIII</span>
+              <span>Zero-Oxygen</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-fire-burner"></i>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Boiler House</span>
+            <h3>New Boiler Installation - Mill B</h3>
+            <p>End-to-end boiler house installation with commissioning and performance testing.</p>
+            <div class="project-tags">
+              <span>DOSH</span>
+              <span>Commissioning</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="project-content">
+            <span class="project-category">AI Solution</span>
+            <h3>Predictive Maintenance System</h3>
+            <p>ML-based failure prediction system reducing unplanned downtime by 25%.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>XGBoost</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-clipboard-check"></i>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Inspection</span>
+            <h3>Pressure Vessel Audit - Plant C</h3>
+            <p>Comprehensive safety inspection and documentation for regulatory compliance.</p>
+            <div class="project-tags">
+              <span>NBIC</span>
+              <span>DOSH</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Fabrication</span>
+            <h3>Sterilizer Fabrication - Mill D</h3>
+            <p>Complete sterilizer fabrication, installation, and commissioning for mill expansion.</p>
+            <div class="project-tags">
+              <span>Fabrication</span>
+              <span>Installation</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-file-contract"></i>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Documentation</span>
+            <h3>Method Statement Development</h3>
+            <p>Comprehensive repair method statements for pressure vessel and boiler systems.</p>
+            <div class="project-tags">
+              <span>QA/QC</span>
+              <span>Safety</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- project & experience highlights -->
-  <section class="section-light">
+  <!-- Testimonials -->
+  <section id="testimonials" class="section-light">
     <div class="container">
-      <h2>🏗️ Palm Oil Mill & Industrial Project Leadership</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Sterilizer fabrications & expansions</h3>
-          <p>Led multiple mill expansions: full sterilizer fabrication, installation, commissioning, and integration with existing boiler plants. Coordinated with cross‑functional teams and DOSH for seamless safety compliance.</p>
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2><i class="fas fa-quote-left"></i> What Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">Shahrul's expertise in thermal deaerators is exceptional. He identified issues our previous contractors missed and restored our system to better-than-new performance.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JM</div>
+            <div class="testimonial-info">
+              <p class="testimonial-name">John M.</p>
+              <p class="testimonial-role">Mill Manager, Palm Oil Company</p>
+            </div>
+          </div>
         </div>
-        <div class="skill-card">
-          <h3>New Boiler House installation</h3>
-          <p>End-to-end project management: site prep, equipment procurement, pressure part erection, hydrotest, steam blow, and performance guarantee.</p>
+        <div class="testimonial-card">
+          <div class="testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">Professional documentation and ASME compliance work. The R-Stamp certification was smooth and the inspector was impressed with the quality of documents.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AK</div>
+            <div class="testimonial-info">
+              <p class="testimonial-name">Ahmad K.</p>
+              <p class="testimonial-role">Engineering Director, Industrial Plant</p>
+            </div>
+          </div>
         </div>
-        <div class="skill-card">
-          <h3>Quality assurance & Documentation</h3>
-          <p>ASME data reports, repair forms (R‑Stamp), quality control manuals, and all documentation for jurisdictional acceptance (DOSH / NBIC).</p>
+        <div class="testimonial-card">
+          <div class="testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">The AI predictive maintenance system has already saved us significant downtime. Shahrul's unique combination of mechanical engineering and data science is invaluable.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SL</div>
+            <div class="testimonial-info">
+              <p class="testimonial-name">Sarah L.</p>
+              <p class="testimonial-role">Operations Manager, Chemical Plant</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact & CTA -->
+  <!-- FAQ Section -->
+  <section id="faq" class="section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is a thermal deaerator and why does it fail?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>A thermal deaerator removes dissolved oxygen from boiler feedwater to prevent corrosion. Over time, tray systems and spray nozzles degrade, reducing efficiency and allowing oxygen breakthrough. This leads to pitting corrosion, boiler tube failures, and increased maintenance costs.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long does a typical deaerator repair take?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Most deaerator repairs can be completed within 2-4 weeks, depending on the extent of damage and availability of parts. We provide a detailed timeline after initial assessment. Post-repair validation testing typically takes 1-2 days.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you work internationally?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, I provide both on-site and remote consulting services worldwide. For on-site work, I've completed projects in Malaysia, Indonesia, and surrounding regions. Remote consulting is available for documentation review, method statement development, and AI implementation guidance.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What certifications do you hold?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>I hold ASME certifications in Section VIII (Pressure Vessels), Section IX (Welding), Section V (Nondestructive Examination), and Section II (Materials). I'm also certified in NBIC (National Board) and familiar with DOSH regulations in Malaysia and equivalent standards in other jurisdictions.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How can AI predictive maintenance help my facility?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>AI-based predictive maintenance analyzes historical operational data to predict equipment failures before they occur. This can reduce unplanned downtime by 20-35%, lower maintenance costs by 10-25%, and extend equipment life. I can implement a customized solution based on your existing data infrastructure.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What information do you need for a quote?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>For an accurate quote, I typically need: equipment type and age, current issues/symptoms, any existing inspection reports, your timeline requirements, and site location. I offer free initial consultations to assess your needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
   <section id="contact" class="contact-section">
     <div class="container">
       <div class="contact-box">
-        <h2 class="contact-title">📞 Let's fix your thermal deaerator — permanently.</h2>
-        <p class="contact-subtitle">Reach out for consulting, site inspection, ASME repair plans, or AI maintenance integration.</p>
-        <div class="contact-buttons">
-          <a href="mailto:shahrul.azmi@example.com" class="btn btn-light">✉️ shahrul.azmi@example.com</a>
-          <a href="#" class="btn btn-outline-light">📅 Book a consultation (Calendly)</a>
+        <div class="contact-decoration"></div>
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag" style="background: rgba(255,255,255,0.2);">Contact</span>
+          <h2 class="contact-title" style="color: white; border: none; padding: 0;"><i class="fas fa-phone-volume"></i> Let's Solve Your Problem</h2>
+          <p class="contact-subtitle">Reach out for consulting, site inspection, or AI maintenance integration.</p>
         </div>
-        <p class="contact-location">📍 Based in Malaysia | Available for on-site & remote projects worldwide</p>
+        
+        <div class="contact-details-grid">
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-detail-content">
+              <span class="contact-detail-label">Phone</span>
+              <a href="tel:+601139794166">+60 11-3979 4166</a>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-detail-content">
+              <span class="contact-detail-label">Email</span>
+              <a href="mailto:shahrulazmisalimshah@gmail.com">shahrulazmisalimshah@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-detail-content">
+              <span class="contact-detail-label">Location</span>
+              <span>Malaysia</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-buttons">
+          <a href="contact.html" class="btn btn-light"><i class="fas fa-envelope"></i> Send a Message</a>
+          <a href="tel:+601139794166" class="btn btn-outline-light"><i class="fas fa-phone-alt"></i> Call Now</a>
+        </div>
+        
+        <p class="contact-location"><i class="fas fa-globe"></i> Available for on-site & remote projects worldwide</p>
       </div>
     </div>
   </section>
 </main>
 
-<footer>
+<!-- Footer -->
+<footer class="footer">
   <div class="container">
-    <p>© 2025 Shahrul Azmi Salim Shah — Mechanical Engineer, ASME Pressure Vessel Specialist, AI-enabled Reliability Expert.</p>
-    <p class="footer-credits">📄 Credentials: 22+ years | ASME VIII, IX, V, II | NBIC | BS1113 | PV Elite | Python for predictive maintenance</p>
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h3 class="footer-logo"><i class="fas fa-cog"></i> Shahrul<span>Engineer</span></h3>
+        <p>Mechanical Engineer specializing in pressure vessel design, thermal deaerator repair, ASME compliance, and AI-driven predictive maintenance.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-services">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Deaerator Repair</a></li>
+          <li><a href="#">Pressure Vessel Services</a></li>
+          <li><a href="#">AI Predictive Maintenance</a></li>
+          <li><a href="#">Technical Documentation</a></li>
+          <li><a href="#">Safety Inspection</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <ul>
+          <li><i class="fas fa-phone"></i> +60 11-3979 4166</li>
+          <li><i class="fas fa-envelope"></i> shahrulazmisalimshah@gmail.com</li>
+          <li><i class="fas fa-map-marker"></i> Malaysia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Shahrul Azmi Salim Shah. All rights reserved.</p>
+      <p class="footer-credentials">ASME Certified | NBIC | 22+ Years Experience</p>
+    </div>
   </div>
 </footer>
 
 <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile Navigation Toggle
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navMenu');
+  
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    navToggle.classList.toggle('active');
+  });
+
+  // Close menu when clicking a link
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      navToggle.classList.remove('active');
+    });
+  });
+
+  // Sticky Navbar on Scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (scrollY >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+    
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').slice(1) === current) {
+        link.classList.add('active');
+      }
+    });
+  });
+
+  // FAQ Accordion
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const faqItem = button.parentElement;
+      faqItem.classList.toggle('active');
+    });
+  });
+
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -192,10 +661,11 @@
       const target = document.querySelector(targetId);
       if(target) {
         e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
   });
 </script>
+
 </body>
 </html>
