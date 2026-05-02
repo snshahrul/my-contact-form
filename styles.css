@@ -1,0 +1,199 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts & Base Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #0077cc, #00c6ff);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero-title {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  background-color: #ffffff;
+  color: #0077cc;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 1.2em;
+  padding: 15px 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #e0e0e0;
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #0077cc;
+}
+
+/* Skill Grid */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-title {
+  margin-bottom: 10px;
+  color: #0077cc;
+  font-size: 1.5em;
+}
+
+.skill-description {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Experience Section */
+.experience-item {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Certification Section */
+.certification-list {
+  list-style: none;
+  padding: 0;
+}
+
+.certification-list li {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+/* Contact Section */
+.contact-btn {
+  background-color: #0077cc;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5em;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3em;
+  }
+
+  .section-title {
+    font-size: 2em;
+  }
+
+  .skill-title {
+    font-size: 1.3em;
+  }
+
+  .skill-description {
+    font-size: 1em;
+  }
+}
