@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <style>
+    /* Add the CSS from the previous response here */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      background: #121212;
+      color: #eee;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 40px;
+      transition: all 0.3s ease;
+    }
+
+    .contact-form.dark-mode {
+      background: #1e1e1e;
+      color: #eee;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #007BFF;
+    }
+
+    .contact-form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #007BFF;
+      box-shadow: 0 0 5px rgba(0,123,255,0.5);
+      outline: none;
+    }
+
+    .contact-form button {
+      padding: 12px 25px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .contact-form .success {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: center;
+      background-color: #d4edda;
+      color: #155724;
+      display: none;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .contact-form .error {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: center;
+      background-color: #f8d7da;
+      color: #721c24;
+      display: none;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .contact-form .hidden {
+      display: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-form" id="contactFormContainer">
+    <h2>Get in Touch</h2>
+    
+    <form action="https://formspree.io/f/maqvqygy" method="POST" id="contactForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email" />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required placeholder="Tell us about your project or request"></textarea>
+
+      <!-- reCAPTCHA V3 - invisible, handled by Formspree automatically -->
+      <input type="hidden" name="_captcha" value="true" />
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="success" id="successMessage">Thank you! We'll get back to you soon.</div>
+    <div class="error" id="errorMessage">Oops! Something went wrong. Please try again.</div>
+  </div>
+
+  <script>
+    /* Add the JavaScript from the previous response here */
+    const darkModeToggle = document.createElement("button");
+    darkModeToggle.innerHTML = "🌙 Dark Mode";
+    darkModeToggle.style.marginTop = "20px";
+    darkModeToggle.style.width = "100%";
+    darkModeToggle.style.padding = "12px";
+    darkModeToggle.style.backgroundColor = "#007BFF";
+    darkModeToggle.style.color = "white";
+    darkModeToggle.style.border = "none";
+    darkModeToggle.style.borderRadius = "5px";
+    darkModeToggle.style.cursor = "pointer";
+    darkModeToggle.style.fontSize = "16px";
+    darkModeToggle.style.transition = "background-color 0.3s";
+
+    darkModeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      document.getElementById("contactFormContainer").classList.toggle("dark-mode");
+      darkModeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️ Light Mode" : "🌙 Dark Mode";
+    });
+
+    // Add dark mode toggle to the top of the form
+    const formContainer = document.getElementById("contactFormContainer");
+    formContainer.insertBefore(darkModeToggle, formContainer.firstChild);
+
+    // Optional: Show success message and hide errors
+    function showSuccess() {
+      const successMessage = document.getElementById('successMessage');
+      const errorMessage = document.getElementById('errorMessage');
+      successMessage.classList.remove('hidden');
+      errorMessage.classList.add('hidden');
+    }
+
+    function showError() {
+      const successMessage = document.getElementById('successMessage');
+      const errorMessage = document.getElementById('errorMessage');
+      successMessage.classList.add('hidden');
+      errorMessage.classList.remove('hidden');
+    }
+
+    // Handle form submission
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent default form submission
+
+      const email = this.email.value.trim();
+      const message = this.message.value.trim();
+
+      if (!email || !message) {
+        showError();
+        return;
+      }
+
+      // Show success message
+      showSuccess();
+
+      // Hide form after submission (optional)
+      this.style.display = 'none';
+
+      // Submit the form to Formspree
+      this.submit();
+    });
+
+    // Optional: Auto-hide success message
+    setTimeout(() => {
+      const successMessage = document.getElementById('successMessage');
+      if (successMessage.classList.contains('hidden') === false) {
+        successMessage.classList.add('hidden');
+      }
+    }, 3000); // Hide after 3 seconds
+
+    // Optional: Hide messages on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      const successMessage = document.getElementById('successMessage');
+      const errorMessage = document.getElementById('errorMessage');
+      successMessage.classList.add('hidden');
+      errorMessage.classList.add('hidden');
+    });
+  </script>
+
+</body>
+</html>
