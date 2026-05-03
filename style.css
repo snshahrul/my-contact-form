@@ -15,7 +15,7 @@
   --accent-dark: #c1121f;
   --accent-rgba: rgba(230, 57, 70, 0.1);
   
-  /* Neutral Colors */
+  /* Neutral Colors - Light Mode */
   --bg-light: #f8fafc;
   --bg-white: #ffffff;
   --bg-alt: #edf2f7;
@@ -39,6 +39,22 @@
   /* Transitions */
   --transition: all 0.3s ease;
   --transition-slow: all 0.5s ease;
+}
+
+/* Dark Mode Variables */
+[data-theme="dark"] {
+  --bg-light: #0d1117;
+  --bg-white: #161b22;
+  --bg-alt: #21262d;
+  --text-dark: #f0f6fc;
+  --text-muted: #8b949e;
+  --text-light: #6e7681;
+  --border: #30363d;
+  --primary-rgba: rgba(56, 139, 253, 0.15);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.5);
+  --shadow-xl: 0 20px 60px rgba(0,0,0,0.6);
 }
 
 * {
@@ -230,6 +246,38 @@ a {
   height: 2px;
   background: var(--primary);
   transition: var(--transition);
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--text-dark);
+  margin-right: 12px;
+}
+
+.theme-toggle:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+[data-theme="dark"] .theme-toggle {
+  background: var(--bg-alt);
+  color: var(--text-dark);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  background: var(--accent);
+  color: white;
 }
 
 /* ============================================
@@ -491,11 +539,30 @@ a {
 
 .photo-wrapper {
   position: relative;
+  width: 280px;
+  height: 280px;
+}
+
+.photo-img {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #2c5282, #1a365d);
+}
+
+.photo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .photo-placeholder {
-  width: 280px;
-  height: 280px;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(135deg, #2c5282, #1a365d);
   border-radius: var(--radius-xl);
   display: flex;
