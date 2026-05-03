@@ -539,8 +539,8 @@ a {
 
 .photo-wrapper {
   position: relative;
-  width: 250px;
-  height: 350px;
+  width: 200px;
+  height: 300px;
 }
 
 .photo-img {
@@ -578,7 +578,7 @@ a {
   position: absolute;
   top: -15px;
   right: -15px;
-  width: 60px;
+  width: 100px;
   height: 100px;
   background: var(--accent);
   border-radius: 50%;
