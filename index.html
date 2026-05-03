@@ -18,6 +18,9 @@
     <a href="#" class="nav-logo">
       <i class="fas fa-cog"></i> Shahrul<span>Consultancy</span>
     </a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
       <span></span>
       <span></span>
@@ -80,8 +83,8 @@
     </div>
     <div class="hero-photo">
       <div class="photo-wrapper">
-        <div class="photo-placeholder">
-          <i class="fas fa-user"><p style="text-align: center"><span style="line-height: 2.5; background-color: #CCA736"></span><img src="../OneDrive/Documents/folder 2026/logo/my_photo.png" width="200" height="250" alt=""></p></i>
+        <div class="photo-img">
+          <img src="../OneDrive/Documents/folder 2026/logo/my_photo.png" alt="Shahrul Azmi Salim Shah" width="180" height="200" />
         </div>
         <div class="photo-accent"></div>
       </div>
@@ -505,7 +508,7 @@
                 </div>
                 <div class="meta-item">
                   <i class="fas fa-certificate"></i>
-                  <span>DOSH, ASME IX</span>
+                  <span>DOSH, ASME VII, IX</span>
                 </div>
               </div>
             </div>
@@ -576,10 +579,10 @@
           </div>
           <div class="project-content">
             <span class="project-category">Pressure Vessel</span>
-            <h3>Deaerator Repair - Mill A</h3>
+            <h3>Deaerator Repair - East Palm OIl Mill</h3>
             <p>Complete restoration of thermal deaerator, restoring zero-oxygen performance.</p>
             <div class="project-tags">
-              <span>ASME VIII</span>
+              <span>ASME VIII Div.1</span>
               <span>Zero-Oxygen</span>
             </div>
           </div>
@@ -589,7 +592,7 @@
             <i class="fas fa-fire-burner"></i>
           </div>
           <div class="project-content">
-            <span class="project-category">Boiler House</span>
+            <span class="project-category">Water Tube Boiler</span>
             <h3>Water Tube Boiler Tube  Replacement - Golconda Palm OIl Mill</h3>
             <p>Remove, clean, installation new tube testing & commissionin.</p>
             <div class="project-tags">
@@ -632,8 +635,8 @@
           </div>
           <div class="project-content">
             <span class="project-category">Fabrication</span>
-            <h3>Qblique Sterilizer Fabrication - Pagoh Palm OIl Mill</h3>
-            <p>Complete sterilizer from Desgin Calculation, drawing,  fabrication, installation, testing & commissioning for mill expansion.</p>
+            <h3>Oblique Steriliser Fabrication - Pagoh Palm OIl Mill</h3>
+            <p>Complete steriliser from Desgin Calculation, drawing,  fabrication, installation, testing & commissioning for mill expansion.</p>
             <div class="project-tags">
               <span>Design</span>
               <span>Fabrication</span>
@@ -783,7 +786,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-about">
-        <h3 class="footer-logo"><i class="fas fa-cog"></i> Shahrul<span>Engineer</span></h3>
+        <h3 class="footer-logo"><i class="fas fa-cog"></i> Shahrul<span>Consultancy</span></h3>
         <p>Mechanical Engineer specializing in pressure vessel design, pressure vessel and boiler repair, ASME compliance, and AI-driven predictive maintenance.</p>
         <div class="footer-social">
           <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -897,6 +900,35 @@
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
+  });
+
+  // Dark Mode Toggle
+  const themeToggle = document.getElementById('themeToggle');
+  const themeIcon = themeToggle.querySelector('i');
+  
+  // Check saved theme preference
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    themeIcon.classList.remove('fa-moon');
+    themeIcon.classList.add('fa-sun');
+  }
+  
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    if (newTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      themeIcon.classList.remove('fa-moon');
+      themeIcon.classList.add('fa-sun');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+      themeIcon.classList.remove('fa-sun');
+      themeIcon.classList.add('fa-moon');
+      localStorage.setItem('theme', 'light');
+    }
   });
 </script>
 
