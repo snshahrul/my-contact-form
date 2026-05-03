@@ -539,30 +539,30 @@ a {
 
 .photo-wrapper {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 150px;
+  height: 150px;
 }
 
 .photo-img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  border: 4px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   background: linear-gradient(135deg, #2c5282, #1a365d);
 }
 
 .photo-img img {
   width: 100%;
-  height: 100%;
+  height: 80%;
   object-fit: cover;
   object-position: center top;
 }
 
 .photo-placeholder {
   width: 100%;
-  height: 100%;
+  height: 80%;
   background: linear-gradient(135deg, #2c5282, #1a365d);
   border-radius: var(--radius-xl);
   display: flex;
@@ -571,7 +571,7 @@ a {
   font-size: 5rem;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  border: 4px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .photo-accent {
